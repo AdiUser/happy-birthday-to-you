@@ -77,6 +77,7 @@ html, body {
 
 body {
     font: 5em/1 Open Sans, Impact;
+    background-color: #968f8f;
     margin: 0;
 }
 
@@ -90,8 +91,18 @@ svg {
 }
 
 .the-head {
-    background: #111;
+    background: #000000;
     margin : 0px 0px;
     padding : 0px 0px;
     width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+canvas {
+	position: absolute;
+	height: 100%;
+	width :100%;
 }
