@@ -1,8 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800); body {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font: 5em/1 Open Sans, Impact;
+    background-color: #968f8f;
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+ 
 }
 
 .row {
@@ -76,9 +83,7 @@ html, body {
 }
 
 body {
-    font: 5em/1 Open Sans, Impact;
-    background-color: #968f8f;
-    margin: 0;
+    
 }
 
 svg {
@@ -106,9 +111,43 @@ canvas {
     width : 100%;
 }
 
-@media screen and (max-width: 440px) {
+.brand-logo {
+    padding-left: 20px !important;
+    letter-spacing : 1px;
+}
+
+#emoji {
+    color : #ffffff;
+    font-size :1.2em;
+    font-weight : lighter;
+    
+}
+@media screen and (max-width: 1050px) {
     .the-head {
         top: 20%;
-        width;100%; height : 100%;
+        width;100%
+        /* height : 100%; */
     }
+    .brand-logo {
+        font-size : 20px !important;
+        font-weight : bold;
+    }
+}
+
+nav {
+	background-color: rgb(182, 36, 41) !important;
+}
+.page-footer {
+    padding-top: 20px;
+    background-color: #b62429;
+    font-size: 18px;
+    position: absolute;
+    top: 101%;
+    z-index: 3;
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    color : #ffffff;
+    font-weight : bold;
 }

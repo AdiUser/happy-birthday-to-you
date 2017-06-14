@@ -11,28 +11,26 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <body>
-    <audio autoplay="autoplay" loop >
+    <audio autoplay="autoplay" >
     	<source src="happy_birthday_song.mp3" type="audio/mp3">
     </audio>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">It's <span id="name-head"></span>'s Birthday!</a>
+
+                <a href="#" class="brand-logo">It's <span id="name-head"></span>'s Birthday! <span id="emoji">&#128515; </span></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    
                     <li>
-                        <a href="sass.html">Sass</a>
-                    </li>
-                    <li>
-                        <a href="badges.html">Components</a>
-                    </li>
-                    <li>
-                        <a href="collapsible.html">JavaScript</a>
+                        <a href="collapsible.html">How to use?</a>
                     </li>
                 </ul>
             </div>
         </nav>
         
 <!--         <canvas class="fireworks" width="2732" height="1308" style="width: 1366px; height: 654px;"></canvas>
- -->      <div class="the-head">
+ -->
+<div class="hero">      
+ <div class="the-head">
       <div class="container">
       <div class="row">
      
@@ -76,6 +74,18 @@
 </div>
 </div>
 
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+               <p> Happy Birthday, <span id="name-footer"></span> </p>
+          </div>
+          </div>
+          </div>
+        </footer>
+            
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script><!-- 
         <script type="text/javascript" src="fireworks.js"></script>
  -->        <script type="text/javascript" src="fireworks_2.js"></script>
@@ -98,11 +108,20 @@ window.onload = function() {
 	}
 	// Give the parameter a variable name
 	var name = getParameterByName('name');
+	var d_name = "You";
 
-	if (name !== 'null')
-	document.getElementById('name').innerHTML = name + " &#128521;";
-	document.getElementById('name-head').innerHTML = name;
+	if (name !== 'null'){
+		document.getElementById('name').innerHTML = name + " &#128521;";
+		document.getElementById('name-head').innerHTML = name;
+		document.getElementById('name-footer').innerHTML = name;
+	}
+	else {
 
+		document.getElementById('name').innerHTML = d_name + " &#128521;";
+		document.getElementById('name-head').innerHTML = d_name;
+		document.getElementById('name-footer').innerHTML = d_name;
+
+	}
 
 
 
