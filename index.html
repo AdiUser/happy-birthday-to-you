@@ -29,6 +29,9 @@
         </nav>
         <canvas class="fireworks" width="2732" height="1308" style="width: 1366px; height: 654px;"></canvas>
         <div id="name"></div>
+        
+    
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script type="text/javascript" src="fireworks.js"></script>
         <script type="text/javascript">
@@ -51,6 +54,7 @@ window.onload = function() {
 	// Give the parameter a variable name
 	var name = getParameterByName('name');
 
+	if (name !== 'null')
 	document.getElementById('name').innerHTML = name;
 
 
