@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images.png">
         <title></title>
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -11,20 +12,20 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <body>
-        <audio autoplay="autoplay">
+        <audio autoplay="autoplay" loop="loop">
             <source src="happy_birthday_song.mp3" type="audio/mp3">
         </audio>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo">
                     It's <span id="name-head"></span>
-                    's Birthday! <span id="emoji">&#128515;</span>
+                    's Birthday! <!-- <span id="emoji">&#128515;</span> -->
                 </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
                         <a href="collapsible.html">How to use?</a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
         <!--         <canvas class="fireworks" width="2732" height="1308" style="width: 1366px; height: 654px;"></canvas>
@@ -101,25 +102,24 @@
 	    return decodeURIComponent(results[2].replace(/\+/g, " "));
 	}
 	// Give the parameter a variable name
-	var name = getParameterByName('name');
-	var d_name = "You";
+   window.onload = function(){ 
 
-	if (name !== 'null'){
-		document.getElementById('name').innerHTML = name + " &#128521;";
+	var name = getParameterByName('name');
+	var d_name = "Vidhi";
+   
+	if (name !== null){
+		document.getElementById('name').innerHTML = name+" !!" ;/*" &#128521;";*/
 		document.getElementById('name-head').innerHTML = name;
 		document.getElementById('name-footer').innerHTML = name;
 	}
 	else {
 
-		document.getElementById('name').innerHTML = d_name + " &#128521;";
+		document.getElementById('name').innerHTML = d_name + " !!";
 		document.getElementById('name-head').innerHTML = d_name;
 		document.getElementById('name-footer').innerHTML = d_name;
 
 	}
-
-
-
-        
+}
         </script>
     </body>
 </html>
